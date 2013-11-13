@@ -31,6 +31,139 @@
           <span class="credits left"><a href="https://github.com/danielar92/tarea1-git/tree/gh-pages">Repositorio</a></span>
         </div>
 
+<div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+        <article>
+        <h3>Preguntas</h3>
+      </article>
+      <article id="q1">
+        <h3>
+          1. Colocar acá el hash del commit en el que resolviste el merge
+          conflict causado por el paso 4.
+        </h3>
+        <div class="answer">
+           <a href="https://github.com/danielar92/tarea1-git/commit/906a866cb914149442b3d3136e0a0e4b00cafcb3" target="blank">906a866cb914149442b3d3136e0a0e4b00cafcb3</a>
+        </div>
+      </article>
+      <article id="q2">
+        <h3>
+          2. Utilizando el diccionario SOWPODS de Scrabble
+          (<a href="http://norvig.com/ngrams/sowpods.txt"
+          target="blank">http://norvig.com/ngrams/sowpods.txt</a>)
+          escriba un programa (en su lenguaje de preferencia) que
+          determine cuáles letras nunca aparecen repetidas de forma
+          consecutiva (AA, BB, CC, etc). Por ejemplo, la letra “D”
+          aparece repetida pues la palabra “ADD” contiene la
+          subsecuencia “DD”.
+        </h3>
+        <div class="answer">
+          <p>Res: 'q','x'</p>
+          <p>Código: <a href="https://github.com/danielar92/tarea1-git/tree/gh-pages/Codigo/Scrabble.py">Código</a></p>
+        </div>
+      </article>
+      <article id="q3">
+        <h3>
+          3. En un contexto de la herramienta de control de versiones
+          Git: definir 'working directory', 'index', 'local repo', 'remote
+          repo', 'dirty working tree' y 'merge conflict'.
+        </h3>
+        <div class="answer">
+          <ol>
+            <li><strong>Working Directory:</strong> es un single checkout de una versión de un proyecto. Estos archivos son sacados de la base de datos comprimida en el directorio de Git y se colocan en el disco para poder ser usados o modificados.</li>
+            <li><strong>Index:</strong> también conocido como staging area, es un archivo simple, generalmente contenido en el directorio del git, que guarda información acerca de lo que irá en el próximo commit.</li>
+            <li><strong>Local Repo:</strong>copia del repositorio git que el usuario posee en su máquina a través de git clone.</li>
+            <li><strong>Remote Repo:</strong>repositorio que almacena archivos en un servidor externo. Se debe hacer un push desde el repositorio local para que los cambios se vean reflejados en el remoto.</li>
+            <li><strong>Dirty Working Tree:</strong> Working tree en donde existen cambios al repositorio que no han sido commiteados.</li>
+            <li><strong>Merge Conflict:</strong>problema que ocurre cuando dos branches han sido modificados en la misma sección. Github no es capaz de hacer merge automático, y requiere que el usuario modifique a conveniencia. </li>
+          </ol>
+        </div>
+      </article>
+      <article id="q4">
+        <h3>
+          4. Completar la siguiente tabla indicando para cada celda si el
+          comando especificado en la columna lee (R) y/o escribe (W)
+          en la ubicación especificada en la primera fila. Por
+          ejemplo, el comando git commit, lee el indice, construye un
+          commit, lo agrega al repositorio actual y finalmente vacía
+          el indice.
+        </h3>
+        <div class="answer">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th scope="col"><code>git diff</code></th>
+                <th scope="col"><code>git fetch</code></th>
+                <th scope="col"><code>git add</code></th>
+                <th scope="col"><code>git commit</code></th>
+                <th scope="col"><code>git pull</code></th>
+                <th scope="col"><code>git push</code></th>
+                <th scope="col"><code>git checkout</code></th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr><th></th>
+                <th scope="col"><code>git diff</code></th>
+                <th scope="col"><code>git fetch</code></th>
+                <th scope="col"><code>git add</code></th>
+                <th scope="col"><code>git commit</code></th>
+                <th scope="col"><code>git pull</code></th>
+                <th scope="col"><code>git push</code></th>
+                <th scope="col"><code>git checkout</code></th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th scope="row">working dir</th>
+                <td>R</td>
+                <td></td>
+                <td>R</td>
+                <td></td>
+                <td>W</td>
+                <td></td>
+                <td>W</td>
+              </tr>
+              <tr>
+                <th scope="row">index</th>
+                <td>R</td>
+                <td></td>
+                <td>W</td>
+                <td>R/W</td>
+                <td></td>
+                <td></td>
+                <td>R</td>
+              </tr>
+              <tr>
+                <th scope="row">local repo</th>
+                <td></td>
+                <td>W</td>
+                <td></td>
+                <td>W</td>
+                <td></td>
+                <td>R</td>
+                <td>R</td>
+              </tr>
+              <tr>
+                <th scope="row">remote repo</th>
+                <td></td>
+                <td>R</td>
+                <td></td>
+                <td>R</td>
+                <td>W</td>
+                <td></td>
+                <td></td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+</section>
+      </div>
+    </div>
 
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
